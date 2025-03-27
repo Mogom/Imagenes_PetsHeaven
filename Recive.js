@@ -5,8 +5,8 @@ const fs = require("fs");
 const { exec } = require("child_process");
 
 const app = express();
-const port = 3000;
-const repoPath = path.resolve(__dirname); // Ruta del repo
+const port = 5000; // Cambiado a 5000 para coincidir con el frontend
+const repoPath = path.resolve(__dirname); // Ruta del repo secundario
 
 // Configurar almacenamiento con multer
 const storage = multer.diskStorage({
@@ -38,7 +38,7 @@ app.post("/api/upload", upload.single("foto"), (req, res) => {
     cd ${repoPath} &&
     git add uploads/${req.file.filename} &&
     git commit -m "Subida de imagen: ${req.file.filename}" &&
-    git push origin rama
+    git push origin main
   `;
 
   exec(gitCommands, (error, stdout, stderr) => {
@@ -50,7 +50,7 @@ app.post("/api/upload", upload.single("foto"), (req, res) => {
   });
 });
 
-// Servir imágenes estáticas
+// Servir imágenes estáticas (para pruebas locales)
 app.use("/uploads", express.static("uploads"));
 
 app.listen(port, () => {
