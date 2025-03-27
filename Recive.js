@@ -2,40 +2,55 @@ const express = require("express");
 const multer = require("multer");
 const path = require("path");
 const fs = require("fs");
+const { exec } = require("child_process");
 
 const app = express();
 const port = 3000;
+const repoPath = path.resolve(__dirname); // Ruta del repo
 
 // Configurar almacenamiento con multer
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    const uploadPath = "./uploads";
+    const uploadPath = path.join(repoPath, "uploads");
     if (!fs.existsSync(uploadPath)) {
       fs.mkdirSync(uploadPath);
     }
-    cb(null, uploadPath); // El destino donde se guardarán las imágenes
+    cb(null, uploadPath);
   },
   filename: (req, file, cb) => {
     const ext = path.extname(file.originalname);
-    cb(null, Date.now() + ext); // Nombre único basado en la fecha
+    cb(null, Date.now() + ext);
   },
 });
 
-const upload = multer({ storage: storage });
+const upload = multer({ storage });
 
-// Endpoint para manejar la carga de imágenes
+// Endpoint para subir imágenes y hacer commit automático
 app.post("/api/upload", upload.single("foto"), (req, res) => {
   if (!req.file) {
-    return res.status(400).json({ success: false, message: "No se ha subido ninguna imagen" });
+    return res.status(400).json({ success: false, message: "No se subió ninguna imagen" });
   }
 
-  const imageUrl = `/uploads/${req.file.filename}`; // URL de la imagen almacenada
+  const imageUrl = `https://raw.githubusercontent.com/Mogom/Imagenes_PetsHeaven/main/uploads/${req.file.filename}`;
 
-  // Aquí puedes guardar la URL de la imagen en tu base de datos o en un archivo
-  res.json({ success: true, imageUrl });
+  // Comandos para hacer commit y push
+  const gitCommands = `
+    cd ${repoPath} &&
+    git add uploads/${req.file.filename} &&
+    git commit -m "Subida de imagen: ${req.file.filename}" &&
+    git push origin rama
+  `;
+
+  exec(gitCommands, (error, stdout, stderr) => {
+    if (error) {
+      console.error(`Error en Git: ${stderr}`);
+      return res.status(500).json({ success: false, message: "Error al subir la imagen a Git" });
+    }
+    res.json({ success: true, imageUrl });
+  });
 });
 
-// Servir las imágenes estáticas desde el directorio de uploads
+// Servir imágenes estáticas
 app.use("/uploads", express.static("uploads"));
 
 app.listen(port, () => {
