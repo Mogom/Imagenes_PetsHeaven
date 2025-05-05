@@ -435,7 +435,7 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="120" y="520" />
-              <mxPoint x="120" y="896" />
+              <mxPoint x="120" y="856" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -443,7 +443,7 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="120" y="520" />
-              <mxPoint x="120" y="1016" />
+              <mxPoint x="120" y="976" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -676,19 +676,25 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="AnEc0YVvatcZunK_0OSv-1" value="Perfil" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="876" width="80" height="40" as="geometry" />
+          <mxGeometry x="160" y="836" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="AnEc0YVvatcZunK_0OSv-3" value="Actualizar" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="320" y="876" width="80" height="40" as="geometry" />
+          <mxGeometry x="320" y="836" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mAjZqrWzpieBZtQsvX92-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="AnEc0YVvatcZunK_0OSv-5" target="AnEc0YVvatcZunK_0OSv-7">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="AnEc0YVvatcZunK_0OSv-5" value="Administracion" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="160" y="996" width="80" height="40" as="geometry" />
+          <mxGeometry x="160" y="956" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="AnEc0YVvatcZunK_0OSv-7" value="Actualizar" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="320" y="956" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="AnEc0YVvatcZunK_0OSv-8" value="Horarios" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="320" y="1010" width="80" height="40" as="geometry" />
+          <mxGeometry x="480" y="920" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mAjZqrWzpieBZtQsvX92-2" value="Informacion" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="970" width="80" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
