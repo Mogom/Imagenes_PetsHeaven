@@ -1,14 +1,14 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36" version="26.3.0">
   <diagram name="Page-1" id="2a216829-ef6e-dabb-86c1-c78162f3ba2b">
-    <mxGraphModel dx="1307" dy="469" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2020" dy="725" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="7a84cebc1def654-1" value="" style="shape=mxgraph.bpmn.shape;html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;perimeter=ellipsePerimeter;outline=standard;symbol=general;" parent="1" vertex="1">
-          <mxGeometry x="260" y="265" width="50" height="50" as="geometry" />
+          <mxGeometry x="260" y="255" width="50" height="50" as="geometry" />
         </mxCell>
         <mxCell id="7a84cebc1def654-2" value="Navegación" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="360" y="250" width="120" height="80" as="geometry" />
+          <mxGeometry x="360" y="240" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="igWhySHWdOsPGfB4_8ew-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="7a84cebc1def654-29" target="igWhySHWdOsPGfB4_8ew-30">
           <mxGeometry relative="1" as="geometry" />
@@ -21,7 +21,7 @@
         </mxCell>
         <mxCell id="7a84cebc1def654-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" parent="1" source="7a84cebc1def654-2" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="530" y="290" as="targetPoint" />
+            <mxPoint x="530" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="igWhySHWdOsPGfB4_8ew-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="igWhySHWdOsPGfB4_8ew-22">
@@ -63,6 +63,9 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="igWhySHWdOsPGfB4_8ew-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="igWhySHWdOsPGfB4_8ew-17" target="igWhySHWdOsPGfB4_8ew-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="igWhySHWdOsPGfB4_8ew-17" value="Ingreso&amp;nbsp;&lt;div&gt;satisfactorio?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1335" y="493" width="110" height="100" as="geometry" />
         </mxCell>
@@ -78,11 +81,10 @@
         </mxCell>
         <mxCell id="igWhySHWdOsPGfB4_8ew-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="igWhySHWdOsPGfB4_8ew-24">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="330" y="300" as="targetPoint" />
+            <mxPoint x="330" y="280" as="targetPoint" />
             <Array as="points">
               <mxPoint x="595" y="590" />
               <mxPoint x="331" y="590" />
-              <mxPoint x="331" y="300" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -93,7 +95,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="igWhySHWdOsPGfB4_8ew-29" value="Acceder" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="535" y="250" width="120" height="80" as="geometry" />
+          <mxGeometry x="535" y="240" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="igWhySHWdOsPGfB4_8ew-30" value="Verificar datos" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="1045" y="503" width="120" height="80" as="geometry" />
@@ -112,6 +114,15 @@
         </mxCell>
         <mxCell id="igWhySHWdOsPGfB4_8ew-41" value="No" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1385" y="585" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="igWhySHWdOsPGfB4_8ew-44" value="Verificar rol" style="shape=ext;rounded=1;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="503" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="igWhySHWdOsPGfB4_8ew-46" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="200" width="50" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="igWhySHWdOsPGfB4_8ew-48" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="440" width="50" height="240" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
